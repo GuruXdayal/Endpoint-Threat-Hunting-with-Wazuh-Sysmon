@@ -1,3 +1,10 @@
+# 📂 **Scenario 1 — LSASS Credential Dumping (T1003.001)**
+
+**Category:** Credential Access
+**Technique:** OS Credential Dumping
+**Sub-Technique:** LSASS Memory Dump (T1003.001)
+**Platform:** Windows 10
+**Tools Used:** Sysmon, Wazuh, Atomic Red Team
 
 # 🔍 Understanding LSASS Credential Dumping (T1003.001)
 
@@ -90,24 +97,6 @@ NanoDump is specifically designed to **evade EDR**, making it a favorite in real
 | **ProcDump**             | Signed external tool   | ⭐ Easy               | Used heavily by ransomware groups |
 | **comsvcs.dll (LOLBin)** | Living-off-the-land    | ⭐⭐ Medium            | Blends with legitimate binaries   |
 | **NanoDump**             | Direct syscall dumping | ⭐⭐⭐ Hard             | Modern APT & red-team behavior    |
-
----
-
-# **Scenario 1 – LSASS Credential Dumping (T1003.001)**
-
-Using **full Threat Hunting Methodology**,
-using **your exact commands, your exact telemetry, your screenshots**,
-and formatted exactly like a **real SOC case study**.
-
----
-
-# 📂 **Scenario 1 — LSASS Credential Dumping (T1003.001)**
-
-**Category:** Credential Access
-**Technique:** OS Credential Dumping
-**Sub-Technique:** LSASS Memory Dump (T1003.001)
-**Platform:** Windows 10
-**Tools Used:** Sysmon, Wazuh, Atomic Red Team
 
 ---
 
