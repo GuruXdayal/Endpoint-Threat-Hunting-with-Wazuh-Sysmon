@@ -62,7 +62,7 @@ Simulates a stealthy LSASS dump using **LOLBAS (Living-off-the-land binaries)**.
 Executes:
 
 ```
-rundll32.exe C:\Windows\System32\comsvcs.dll, MiniDump lsass.exe <dump path>
+rundll32.exe C:\Windows\System32\comsvcs.dll, MiniDump lsass.exe C:\Windows\Temp\
 ```
 
 Uses built-in Windows DLLs — **no external tool required**.
@@ -200,6 +200,7 @@ data.win.eventdata.parentCommandLine:*lsass.exe*
 
 **Result:** Shows ProcDump accessing LSASS.
 <img width="919" height="439" alt="Test 1" src="https://github.com/user-attachments/assets/24ef5ede-217d-4ae0-a8c2-76f00a8b19ec" />
+<img width="877" height="396" alt="Screenshot 2025-11-19 174102" src="https://github.com/user-attachments/assets/a55b4983-03c0-47d9-a040-443de64325e2" />
 
 ---
 
@@ -212,7 +213,7 @@ data.win.eventdata.parentCommandLine:*lsass*
 
 **Result:** Detects comsvcs.dll LSASS dump.
 <img width="921" height="415" alt="Screenshot 2025-11-19 194035" src="https://github.com/user-attachments/assets/c5146860-4a29-4454-b1a6-9d34ca6cd0c7" />
-
+<img width="896" height="400" alt="Test 2" src="https://github.com/user-attachments/assets/0677ab88-0f2b-4165-b38c-6ff9530ec0a3" />
 ---
 
 ### **🔍 Query 3 — Nanodump Behavior (Test 4)**
@@ -224,7 +225,7 @@ data.win.eventdata.commandLine:*nanodump*
 
 **Result:** Detects NanoDump as expected.
 <img width="921" height="419" alt="Screenshot 2025-11-19 200937" src="https://github.com/user-attachments/assets/8b8ad36d-2373-4b55-8b89-9f45cc07e872" />
-
+<img width="431" height="456" alt="Test 4" src="https://github.com/user-attachments/assets/37a5cb78-65ca-4fb3-9683-d7a13d72b135" />
 ---
 
 # 🚨 **6. Wazuh Detection (SIEM Alerts)**
