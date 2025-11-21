@@ -1,10 +1,6 @@
 # 📂 **Scenario 3 — User Execution: Malicious File (T1204.002)**
 
-**Category:** Execution  
-**Technique:** User Execution  
-**Sub-Technique:** Malicious File (T1204.002)  
-**Platform:** Windows 10  
-**Tools Used:** Sysmon, Wazuh, Atomic Red Team, PowerShell  
+**Category:** Execution  **Technique:** User Execution  **Sub-Technique:** Malicious File (T1204.002)  **Platform:** Windows 10  **Tools Used:** Sysmon, Wazuh, Atomic Red Team, PowerShell  
 
 ---
 
@@ -255,4 +251,5 @@ No new detection gaps — rules created during earlier scenarios were effective 
 * Ability to correlate **process, registry, and network** artifacts
 * Reinforced knowledge of **T1204.002** and phishing kill-chain patterns
 * Enhanced skill in building Wazuh Discover queries
+
 
